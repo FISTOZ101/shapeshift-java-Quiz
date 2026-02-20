@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;	
+}
+
+.container {
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255, 1));
+   
+    border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 2.5rem;
+    width: 90%;
+    max-width: 520px;
+    position: relative;
+    border: 0px solid black;
+    
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+
+.option {
+    text-align: left;
+    margin-top: 0.8rem;
+    font-size: 22px;
+    color: white;
+}
+
+.correct {
+    background: green !important;
+    border: 1px solid white !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3) !important;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.wrong {
+    background: red !important;
+    border: 1px solid white !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.3) !important;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+#next {
+    display: none;
+    margin-top: 1.5rem;
+    background:black;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+	color:white;
+}
+
+#question {
+  color: white;       
+  font-size: 1.8rem;  
+  font-weight: 700;   
+  text-align: center;  
+  margin-bottom: 1.5rem;   
+}
